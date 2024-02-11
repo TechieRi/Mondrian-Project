@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+   
+    body {
+  background-color: #232629;
+
+}
+ */
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: 320px 198px 153px 50px;
+  grid-template-rows: 414px 130px 155px 22px;
+  gap: 9px;
+  background-color: black;
+ width: 748px;
+  height: 748px;
+}
+
+/*she added a background color to the entire item in the solution. */
+.grid-item {
+  background-color: #F0F1EC;
+}
+
+.red {
+background-color: #E72F24;
+
+}
+
+.gray {
+  background: #F0F1EC;
+  grid-column: span 3;
+}
+
+.gray-sq {
+  background: #F0F1EC;
+  grid-row: span 2;
+
+}
+
+.gray-sq-2 {
+  background: #F0F1EC;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.blue-sq {
+  background-color: #004592;
+  border-color: solid black 10px;
+  margin-bottom: 10px;
+  
+}
+
+.gray-sq-3 {
+  background: #F0F1EC;
+  grid-row: span 2;
+}
+
+.gray-sq-4 {
+  background: #F0F1EC;
+  
+}
+
+.yellow-sq {
+  background-color: #F9D01E;
+}
+
+
+.black-sq {
+  background-color: #232629;
+  
+}
+</style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+ 
+    <div class="grid-item red"></div>
+    <div class="grid-item gray"></div>
+    <div class="grid-item gray-sq"></div>
+    <div class="grid-item gray-sq-2"></div>
+    <div class="grid-item blue-sq"></div>
+    <div class="grid-item gray-sq-3"></div>
+    <div class="grid-item gray-sq-4"></div>
+    <div  class="grid-item yellow-sq"></div>
+    <div class="grid-item black-sq"></div>
+  </div>
+</body>
+
+</html>
